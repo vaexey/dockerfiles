@@ -6,3 +6,4 @@
 | pihole      | 91             | 9143       | 9180      | 53 (*dns*)          |
 | nginx-proxy | 1              | 443        | 80        | 81 (*config*)       |
 | uptime-kuma | 92             |            | 9280      |                     |
+| bind9-dns   | 93             |            | 9380      | 9353 (*dns*)        |

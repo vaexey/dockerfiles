@@ -1,0 +1,14 @@
+services:
+  bind9-dns:
+    container_name: bind9-dns
+    image: conceptant/bind9-namedmanager
+    volumes:
+      - ./bind:/etc/bind
+      - ./mysql:/var/lib/mysql
+      - ./log:/var/log
+    ports:
+      # <Host Port>:<Container Port>
+      - 9380:8090
+      - 9353:53/tcp
+      - 9353:53/udp
+    restart: unless-stopped
