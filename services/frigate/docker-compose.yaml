@@ -24,4 +24,4 @@ services:
       FRIGATE_RTSP_PASSWORD: "password"
 volumes:
   frigate-config:
-  frigate-data:
+  frigate-media:
