@@ -1,0 +1,6 @@
+services:
+  static-app:
+    build: https://github.com/vaexey/14n.us.git
+    restart: unless-stopped
+    ports:
+      - '9480:80'
